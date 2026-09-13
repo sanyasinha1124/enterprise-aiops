@@ -50,9 +50,6 @@ Evaluation + Logging
 
 This project uses Gemini as the foundation model. We are NOT training Gemini from scratch.
 
-The project teaches both:
-1. LLM fundamentals (tokens, embeddings, transformers, inference)
-2. LLM application engineering (RAG, agents, tools, evaluation, deployment)
 
 The model name is configurable through `GEMINI_MODEL`. The default in this starter is `gemini-3.8-flash`, matching Google's current Interactions API examples at the time this project was generated. If your account exposes a different model, change `.env`.
 
@@ -170,6 +167,3 @@ Do not try to understand every file at once. Use this order:
 - Latency
 - Cost
 
-## Safety note
-
-The sample tools only operate on synthetic local data. Do not connect destructive production actions until authentication, authorization, audit logs, confirmation workflows, and least-privilege permissions are implemented.
