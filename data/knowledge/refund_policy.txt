@@ -1,0 +1,9 @@
+Refund Policy
+
+Customers can request a refund within 30 calendar days of purchase for eligible products.
+
+The order must be marked delivered before the refund workflow can be completed.
+
+If an order is older than 30 days, the standard refund window has expired. A support ticket may still be created for an exception request, but the system must not promise approval.
+
+Refunds are returned to the original payment method after approval.

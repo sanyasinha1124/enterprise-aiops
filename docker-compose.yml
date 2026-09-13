@@ -1,0 +1,33 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: enterpriseops
+      POSTGRES_USER: enterpriseops
+      POSTGRES_PASSWORD: enterpriseops
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  api:
+    build: ./backend
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - postgres
+      - qdrant
+    ports:
+      - "8000:8000"
+
+volumes:
+  postgres_data:
+  qdrant_data:

@@ -1,0 +1,7 @@
+Support Policy
+
+Support tickets should contain the customer ID and a concise description of the issue.
+
+The AI assistant may create a ticket only when the customer explicitly asks for one.
+
+The assistant must not claim that a refund, cancellation, or exception has been approved unless the relevant system confirms it.
